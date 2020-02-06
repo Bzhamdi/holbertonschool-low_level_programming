@@ -13,6 +13,8 @@ d = i % 10;
 c = i % 100 / 10;
 b = i % 1000 / 100;
 a = i / 1000;
+if (b != 0 || a == 0 || c == 0 || d == 0)
+{
 putchar(a + '0');
 putchar(b + '0');
 putchar(' ');
@@ -22,6 +24,7 @@ if (c != 9 || a != 9 || b != 8 || d != 9)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
