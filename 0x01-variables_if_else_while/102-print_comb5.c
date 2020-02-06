@@ -6,21 +6,21 @@
  */
 int main(void)
 {
-int i, a, b, c, d;
-for (i = 1; i <= 9899; ++i)
+int i, j, a, b, c, d;
+for (i = 0; i <= 99; i++)
 {
-d = i % 10;
-c = i % 100 / 10;
-b = i % 1000 / 100;
-a = i / 1000;
-if (b != 0 || a == 0 || c == 0 || d == 0)
+for (j = i + 1; j <= 99; j++)
 {
+a = i / 10;
+b = i % 10;
+c = j / 10;
+d = j % 10;
 putchar(a + '0');
 putchar(b + '0');
 putchar(' ');
 putchar(c + '0');
 putchar(d + '0');
-if (c != 9 || a != 9 || b != 8 || d != 9)
+if (i != 98 || j != 99)
 {
 putchar(',');
 putchar(' ');
