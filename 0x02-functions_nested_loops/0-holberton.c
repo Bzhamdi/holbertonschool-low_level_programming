@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include "holberton.h"
 /**
  * main - main
  *
@@ -13,9 +13,9 @@ char chaine[] = "Holberton";
 int i = 0;
 while (chaine[i] != '\0')
 {
-putchar(chaine[i]);
+_putchar(chaine[i]);
 i++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
