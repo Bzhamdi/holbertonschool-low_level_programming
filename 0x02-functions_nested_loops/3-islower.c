@@ -12,10 +12,10 @@ int _islower(int c)
 int a = c;
 if (a >= 96 && a <= 123)
 {
-return (0);
+return (1);
 }
 else
 {
-return (1);
+return (0);
 }
 }
