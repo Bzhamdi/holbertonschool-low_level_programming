@@ -2,23 +2,39 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *time_table - prints the 9 times table
+ *times_table - prints the_times_table
  *
  *
  *
  */
 void times_table(void)
 {
-int i, j;
+int i, j, c;
 for (i = 0 ; i <= 9 ; ++i)
 {
 for (j = 0 ; j <= 9 ; ++j)
 {
-_putchar (j * i);
-if (j != 9)
+c = j * i;
+if (c >= 10)
 {
-_putchar(',');
 _putchar(' ');
+_putchar(c / 10 + '0');
+_putchar(c % 10 + '0');
+}
+else
+{
+if (j != 0)
+{
+_putchar(' ');
+_putchar(' ');
+}
+_putchar(c + '0');
+}
+if (j != 9)
+_putchar(',');
+if (j == 9)
+{
+_putchar('\n');
 }
 }
 }
