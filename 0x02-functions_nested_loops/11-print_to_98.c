@@ -20,7 +20,7 @@ printf(", ");
 }
 printf("\n");
 }
-if (n == 0)
+if (n == 98)
 {
 printf("%d\n", n);
 }
