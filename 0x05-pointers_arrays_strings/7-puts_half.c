@@ -13,9 +13,10 @@ b = a;
 if (a % 2 != 0)
 {
 a = (a - 1) / 2;
+a = a + 1;
 }
 else
-a = a / 2; 
+a = a / 2;
 for (j = a; j <= b ; j++)
 _putchar (*(str + j));
 _putchar ('\n');
