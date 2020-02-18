@@ -1,0 +1,20 @@
+#include "holberton.h"
+/**
+ *print_rev - prints
+ *@s: param
+ *
+ *
+ */
+void print_rev(char *s)
+{
+
+int j, i, a;
+a = 0;
+for (i = 0; s[i] != '\0'; i++)
+a = a + 1;
+for (j = a; j >= 0; j--)
+{
+_putchar(s[j]);
+}
+_putchar('\n');
+}
