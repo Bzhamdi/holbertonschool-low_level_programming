@@ -8,10 +8,12 @@
 int _atoi(char *s)
 {
 int i, k, a;
-i=0;
+i = 0;
 a = 1;
 k = 0;
-for ( i = 0 ; s[i] != '\0'; ++i)
+if (*s == '\0')
+return (0);
+for (i = 0 ; s[i] != '\0'; ++i)
 {
 if (s[i] == '-')
 {
@@ -25,11 +27,11 @@ if (s[i] >= '0' && s[i] <= '9')
 {
 k = k * 10;
 k = k + s[i] - '0';
-if (s[i+1] >= '0' && s[i] <= '9')
+if (s[i + 1] >= '0' && s[i] <= '9')
 continue;
 else
 break;
 }
 }
-return (k * a);
+return (k *a);
 }
