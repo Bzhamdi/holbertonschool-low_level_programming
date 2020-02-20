@@ -14,7 +14,7 @@ int i, j;
 i = 0;
 j = 0;
 for (i = 0 ; str[i] != '\0'; i++)
-for (j = 0; j <= 47; j++)
+for (j = 0; j <= 48; j++)
 if (str[i] == a[j])
 {
 str[i] = b[j];
