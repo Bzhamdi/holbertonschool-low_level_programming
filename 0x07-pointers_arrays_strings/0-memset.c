@@ -13,7 +13,7 @@ unsigned int i;
 unsigned int a;
 a = n;
 i = 0;
-for (i = 0; i <= a; i++)
+for (i = 0; i < a; i++)
 s[i] = b;
 return (s);
 }
