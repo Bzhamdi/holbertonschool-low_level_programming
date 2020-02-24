@@ -7,20 +7,18 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int max;
 unsigned int i, j;
-for (i = 0; accept[i] != '\0'; i++)
+i = 0;
+while (s[i] != '\0')
 {
-for (j = 0; s[j] != '\0' ; j++)
+for (j = 0; accept[j] != '\0' ; ++j)
 {
-if (accept[i] == s[j])
-{
-if (j > max)
-max = j;
+if (s[i] == accept[j])
 break;
 }
+if (!accept[j])
+break;
+i++;
 }
-}
-max++;
-return (max);
+return (i);
 }
