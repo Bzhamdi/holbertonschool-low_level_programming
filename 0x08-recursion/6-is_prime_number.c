@@ -1,12 +1,14 @@
 #include "holberton.h"
+
 /**
- * _prime - increments count
+ * prime - increments count
  * @a: The number to divide
  * @b: The number to check
  *
  * Return: 1 if is prime else 0
  */
-int _prime(int a, int b)
+
+int prime(int a, int b)
 {
 if (b < 0)
 return (0);
@@ -15,7 +17,7 @@ return (1);
 if (b % a == 0)
 return (0);
 else
-return (_prime(++a, b));
+return (prime(++a, b));
 }
 
 /**
@@ -29,5 +31,5 @@ int is_prime_number(int n)
 {
 if (n == 1)
 return (0);
-return (_prime(2, n));
+return (prime(2, n));
 }
