@@ -6,7 +6,7 @@
  *
  * Return: 1 if is prime else 0
  */
-int prime(int a, int b)
+int _prime(int a, int b)
 {
 if (b < 0)
 return (0);
