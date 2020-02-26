@@ -17,7 +17,7 @@ return (1 + _strlen_recursion(s));
 /**
 * palindrome - to verify palindrome
 *@s: a string
-*@l: the length
+*@len: the length
 *Return: the value
 */
 int palindrome(char *s, int len)
