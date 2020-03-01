@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 /**
  *main -  prints all arguments it receives.
  *@argc: param int lenth
