@@ -20,8 +20,6 @@ while (s1[i])
 i++;
 while (s2[j])
 j++;
-if (i == 0 && j == 0)
-return (null);
 ar = malloc((i + j + 1) * sizeof(char));
 if (ar == NULL)
 return (NULL);
