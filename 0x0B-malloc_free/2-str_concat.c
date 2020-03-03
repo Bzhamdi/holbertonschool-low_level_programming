@@ -21,9 +21,8 @@ i++;
 while (s2[j])
 j++;
 if (i == 0 && j == 0)
-return (NULL);
+return (null);
 ar = malloc((i + j + 1) * sizeof(char));
-return (NULL);
 if (ar == NULL)
 return (NULL);
 for (a = 0; a < i; a++)
