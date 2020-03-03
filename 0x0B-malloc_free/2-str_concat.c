@@ -12,8 +12,6 @@ char *str_concat(char *s1, char *s2)
 {
 char *ar;
 int j, i, a, b;
-a = 0;
-b = 0;
 i = 0;
 j = 0;
 if (s1 == NULL || s2 == NULL)
@@ -22,7 +20,7 @@ while (s1[i])
 i++;
 while (s2[j])
 j++;
-ar = malloc(i + j);
+ar = malloc(i + j + 1);
 if (ar == NULL)
 return (NULL);
 for (a = 0; a < i; a++)
