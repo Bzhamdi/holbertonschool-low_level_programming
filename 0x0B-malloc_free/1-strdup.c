@@ -14,7 +14,8 @@ char *ar;
 int j, i = 0;
 if (str == NULL)
 return (NULL);
-for (i = 0; str[i] != '\0'; i++)
+while (str[i])
+i++;
 ar = malloc(i + 1);
 if (ar == NULL)
 return (NULL);
