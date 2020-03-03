@@ -22,7 +22,7 @@ while (s1[i])
 i++;
 while (s2[j])
 j++;
-ar = malloc(i + j + 1);
+ar = malloc(i + j);
 if (ar == NULL)
 return (NULL);
 for (a = 0; a < i; a++)
