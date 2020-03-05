@@ -31,8 +31,12 @@ ar[a] = s1[a];
 b = 0;
 for (; a < i + n; a++)
 {
+if (s2[b] != '\0')
+{
 ar[a] = s2[b];
 b++;
 }
+}
+ar[a] = '\0';
 return (ar);
 }
