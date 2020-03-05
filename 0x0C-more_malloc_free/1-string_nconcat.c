@@ -36,6 +36,5 @@ for (; a < i + n; a++)
 ar[a] = s2[b];
 b++;
 }
-ar[a] = '\0';
 return (ar);
 }
