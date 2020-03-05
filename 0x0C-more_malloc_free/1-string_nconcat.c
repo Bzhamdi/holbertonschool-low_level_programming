@@ -25,7 +25,7 @@ while (s2[j])
 j++;
 if (n >= j)
 n = j;
-ar = malloc(sizeof(n + i + 1));
+ar = malloc(n + i + 1);
 if (ar == NULL)
 return (NULL);
 for (a = 0; a < i; a++)
