@@ -12,14 +12,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 int a, b, i, j;
 dog_t  *mydog;
-a = 1;
-b = 1;
+a = 0;
+b = 0;
 mydog = malloc(sizeof(struct dog));
 if (mydog == NULL)
 return (NULL);
 while (name[a])
 a++;
-mydog->name = malloc(a);
+mydog->name = malloc(a + 1);
 if (mydog->name == NULL)
 {
 free(mydog);
@@ -27,7 +27,7 @@ return (NULL);
 }
 while (owner[b])
 b++;
-mydog->owner = malloc(b);
+mydog->owner = malloc(b + 1);
 if (mydog->owner == NULL)
 {
 free(mydog->name);
