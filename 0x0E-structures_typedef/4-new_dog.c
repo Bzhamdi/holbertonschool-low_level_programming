@@ -22,7 +22,6 @@ a++;
 mydog->name = malloc(a);
 if (mydog->name == NULL)
 {
-free(mydog->name);
 free(mydog);
 return (NULL);
 }
@@ -31,7 +30,7 @@ b++;
 mydog->owner = malloc(b);
 if (mydog->owner == NULL)
 {
-free(mydog->owner);
+free(mydog->name);
 free(mydog);
 return (NULL);
 }
