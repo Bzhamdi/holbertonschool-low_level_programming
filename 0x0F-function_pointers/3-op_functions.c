@@ -26,7 +26,7 @@ return (a - b);
  */
 int op_mul(int a, int b)
 {
-return (a - b);
+return (a * b);
 }
 /**
  * op_div - div.
