@@ -12,7 +12,7 @@ va_list l_args;
 unsigned  int i = 0;
 char *str;
 va_start(l_args, format);
-if (format == NULL)
+while (format == NULL)
 return;
 while (format[i] != '\0')
 {
