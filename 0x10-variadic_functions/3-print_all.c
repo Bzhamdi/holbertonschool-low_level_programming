@@ -13,8 +13,10 @@ unsigned  int i = 0;
 char *str;
 va_start(l_args, format);
 while (format == NULL)
+{
 printf("\n");
 return;
+}
 while (format[i] != '\0')
 {
 switch (format[i])
