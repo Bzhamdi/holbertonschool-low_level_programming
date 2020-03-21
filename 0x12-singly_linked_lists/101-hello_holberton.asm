@@ -1,14 +1,12 @@
-	section .data
-msg:	db "Hello, Holberton", 0
-fmt:	db "%s", 10, 0
+	extern 	printf
+format:
+	db "Hello, Holberton", 10, 0
 
 	section .text
-	global main
+	global 	main
 main:
-	mov ebx,1
-	mov ecx,msg
-	mov edx,17
-	mov eax,4
-	int 0x80
-	mov eax,0
-	int 0x80
+	mov	rdi, format
+	mov	rax, 0
+	call	printf
+	mov	rax, 0
+	ret
