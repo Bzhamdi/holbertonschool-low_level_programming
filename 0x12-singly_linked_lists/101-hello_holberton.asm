@@ -1,4 +1,4 @@
-section .data
+	section .data
 	msg db 'Hello, Holberton',0xa
 
 	section .text
