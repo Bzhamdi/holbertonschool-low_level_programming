@@ -1,0 +1,15 @@
+#include "holberton.h"
+/**
+ * _strlen - print lenth
+ * @s: param
+ *
+ * Return:a
+ */
+int _strlen(char *s)
+{
+int i, a;
+a = 0;
+for (i = 0; s[i] != '\0'; i++)
+a = a + 1;
+return (a);
+}
