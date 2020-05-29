@@ -12,7 +12,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *tmp;
-	char  *verif;
+	char  *verif = "";
 	unsigned int i;
 
 	if (!ht || !ht->array)
