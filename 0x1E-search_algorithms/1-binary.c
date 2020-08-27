@@ -25,14 +25,14 @@ int binarySearch(int arr[], size_t l, size_t r, int x)
 			printf("\n");
 	}
 
+	mid = l + (r - l) / 2;
+	if (arr[mid] == x)
+		return (mid);
 	if (r > l)
 	{
-		mid = l + (r - l) / 2;
-		if (arr[mid] == x)
-			return (mid);
 		if (arr[mid] > x)
 			return (binarySearch(arr, l, mid - 1, x));
-		else if (arr[mid] < x)
+		if (arr[mid] < x)
 			return (binarySearch(arr, mid + 1, r, x));
 	}
 
